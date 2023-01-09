@@ -1,27 +1,51 @@
 
-<nav>
-  <ul>
-    <li id="to-right">
-      <a href="/auth/signup">Create a account</a>
-    </li>
-    <li id="to-right">
-      <a href="/">Home</a>
-    </li>
-  </ul>
-</nav>
+<body>
+  
+  <style>
+    @media only screen and (max-width: 600px) {
+    
+      a { font-size: small !important; }
+      .rpv{
+        width: 75%;
+      }
 
-<form action="/auth/login" method="POST">
-  <label>
+      form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    }
+  
+ 
+  </style>
+   <div>
+    <nav>
+      <ul>
+        <li id="to-right">
+          <a href="/auth/signup">Create a account</a>
+        </li>
+        <li id="to-right">
+          <a href="/">Home</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <form action="/auth/login" method="POST">
    
-    <input type="text" name="username"  placeholder=" Username"/>
-  </label>
-  <label>
-   
-    <input type="password" name="password" placeholder=" Password" />
-  </label>
-  <button type="submit">LOG IN</button>
-</form>
+       
+        <input type="text" name="username"  placeholder=" Username" class="rpv"/>
+      
+
+        <input type="password" name="password" placeholder=" Password" class="rpv" />
+    
+      <button class="rpv" type="submit">LOG IN</button>
+      <% if(locals.errorMessage != null) {%><%= errorMessage %><%}%>
+    </form>
+   </div>
+</body>
 
 
-<% if(locals.errorMessage != null) {%><%= errorMessage %><%}%>
 

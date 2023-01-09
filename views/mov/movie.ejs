@@ -1,5 +1,10 @@
 
 <link rel="stylesheet" href="/stylesheets/movie.css" />
+<body>
+  
+
+
+</style>
 <nav>
   <ul>
     <li id="to-right">
@@ -24,7 +29,7 @@
 
  <div class="new">
 
- <div class="movie-title"> <h1><%=  movies.title %> </div></h1>
+ <div class="movie-title"> <h1><%=  movies.title %> </h1></div>
 
  <% if (movies.backdrop_path === null) { %>
   <p></p>
@@ -54,7 +59,7 @@
 
 <!-- movies genre -->
 
-<div><h4 class="movie-title" >Genres</h4> 
+<div><h4 class="new" >Genres</h4> 
 <% for( let i = 0; i < movies.genres.length; i++ ) { %>
 <h4 class="movie-title"><%= movies.genres[i].name %> </h4>
 <% } %>
@@ -159,3 +164,5 @@
 <% }) %>
 
  </div>
+
+</body>

@@ -12,19 +12,11 @@ body{
   background-size: 1500px 2700px;
   text-align: justify;
 }
-a{
+a,h1,p,h3{
   text-align: center;
 }
 
-h1{
-  text-align: center;
-}
-p{
-  text-align: center;
-}
-h3{
-  text-align: center;
-}
+
   .movie-title {
     display: flex;
     justify-content: center;
@@ -41,7 +33,7 @@ h3{
     border: 6px solid rgb(0, 0, 0);
     border-radius: 4px;
     padding: 1px;
-   
+    width: 50%;
   }  
 
    .movieimage{
@@ -69,8 +61,24 @@ h3{
 .new{
   display: flex;
   justify-content: center;
+  justify-items: center;
   flex-direction: column;
-  background-color: rgb(39, 43, 51);
-  
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
   
+  
+  a {font-size:small;}
+  form{ margin-left: 75px;}
+  h4{font-size: small !important;}
+  #listimage{width: 100%;}
+
+
+ 
+}
+
+
+ 

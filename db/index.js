@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 
 const MONGO_URI =
   process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/super-manager-movies";
+//mongodb+srv://Ehab:MTR5852.@vxter.fdh8yfd.mongodb.net/super-manager-movies?retryWrites=true&w=majority
 
 mongoose
   .connect(MONGO_URI)

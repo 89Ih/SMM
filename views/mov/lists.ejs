@@ -1,5 +1,7 @@
 
 <link rel="stylesheet" href="/stylesheets/movie.css" />
+<body>
+
 
 <nav>
     <ul>
@@ -38,10 +40,12 @@
     
         <% } else { %>
        
-<div> <a href="/movies/lists/<%= listAPI[i].id %> "><%= listAPI[i].title %> </a></div>
-<div> <h4><%= listAPI[i].overview %> </h4> </div>
-<div class="movie-title"><img id= "listimage" src=<%= `https://image.tmdb.org/t/p/w500/${listAPI[i].backdrop_path}`%>>  </div>
+<a href="/movies/lists/<%= listAPI[i].id %> "><%= listAPI[i].title %> </a>
+<h4><%= listAPI[i].overview %> </h4>
+<img id= "listimage" src=<%= `https://image.tmdb.org/t/p/w500/${listAPI[i].backdrop_path}`%>>  
     <% } %>
 
         <% } %>
  </div>
+
+</body>
